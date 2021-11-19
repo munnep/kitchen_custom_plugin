@@ -1,5 +1,5 @@
 data "extip" "external_ip" {}
 
 output "external_ip" {
-  value = "${data.extip.external_ip.ipaddress}"
+  value = data.extip.external_ip.ipaddress
 }
